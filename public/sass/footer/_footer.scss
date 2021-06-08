@@ -1,0 +1,266 @@
+/*[ footer ]
+//////////////////////////////////////////////////////////////////*/
+
+/*\
+ *
+ * layout-1
+ *
+ * Style Class: full-width
+ *				style-light
+ *
+\*/
+.hun-footer.layout-1 {
+	background-color: #222;
+
+	.content-footer {
+		font-size: 13px;
+		line-height: 1.8;
+		color: #b2b2b2;
+		word-break: break-all;
+		word-break: break-word;
+		padding-top: 95px;
+		padding-bottom: 40px;
+
+		h1,h2,h3,h4,h5,h6 {
+			color: #fff;
+		}
+
+		ul {
+			list-style-type: none;
+			padding: 0;
+
+			li {
+				margin-bottom: 10px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		a {
+			color: inherit;
+
+			&:hover {
+				text-decoration: underline;
+				color: #fff;
+			}
+		}
+
+		.col,
+		[class*="col-"] {
+			padding-bottom: 50px;
+		}
+
+		.widget {
+			margin-bottom: 50px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			.title-widget {
+				font-weight: 700;
+				font-size: 15px;
+				line-height: 1.6;
+				word-break: break-all;
+				word-break: break-word;
+				letter-spacing: 1px;
+				margin-bottom: 28px;
+			}
+		}
+
+		.hun-element-social {
+			padding-top: 10px;
+			letter-spacing: 18px;
+
+			.social-link {
+				font-size: 18px;
+				letter-spacing: normal;
+			}
+		}
+
+		.subscribe-form-01 {
+			form {
+				label {
+					margin-bottom: 0;
+
+					input {
+						color: #b2b2b2;
+						display: block;
+						height: 46px;
+						width: 100%;
+						border: 1px solid rgba(204,204,204, 0.1);
+						background: transparent;
+						padding: 0px 15px;
+
+						&::-webkit-input-placeholder { color: #b2b2b2;}
+						&:-moz-placeholder { color: #b2b2b2;}
+						&::-moz-placeholder { color: #b2b2b2;}
+						&:-ms-input-placeholder { color: #b2b2b2;}
+
+						&:-webkit-autofill,
+						&:-webkit-autofill:hover,
+						&:-webkit-autofill:focus,
+						&:-webkit-autofill:active {
+							-webkit-text-fill-color: #b2b2b2 !important;
+							transition: background-color 5000s ease-in-out 0s;
+						}
+					}
+				}
+
+				button {
+					font-weight: 500;
+					font-size: 15px;
+					line-height: 46px;
+					color: #fff;
+					text-align: center;
+					text-transform: uppercase;
+					white-space: nowrap;
+					display: block;
+					min-width: 160px;
+					border: none;
+					overflow: hidden;
+					padding: 0px 30px;
+					border-radius: 23px;
+					margin-top: 18px;
+					transition: all .2s;
+				}
+			}
+
+			&.button-shape-square {
+				form button {
+					border-radius: 0px;
+					min-width: 150px;
+					padding: 0px 20px;
+				}
+			}
+
+			&.set-color {
+				form {
+					label {
+						input {
+							&:focus {
+								border-color: $main-color-01;
+							}
+						}
+					}
+
+					button {
+						background: $main-color-01;
+
+						&:hover {
+							color: $main-color-01;
+							background: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.copyright-footer {
+		font-size: 13px;
+		color: #888;
+		text-align: center;
+		word-break: break-all;
+		word-break: break-word;
+		border-top: 1px solid rgba(255, 255, 255, .1);
+
+		.content-copyright {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+
+		a {
+			color: #ccc;
+
+			&:hover {
+				text-decoration: underline;
+				color: #fff;
+			}
+		}
+	}
+
+	&.full-width {
+		.container {
+			max-width: 100%;
+
+			@media (min-width: 1300px) {
+				padding-left: 35px;
+				padding-right: 35px;
+			}
+
+			@media (min-width: 1540px) {
+				padding-left: 50px;
+				padding-right: 50px;
+			}
+		}
+	}
+
+	&.style-light {
+		background-color: #f0f0f0;
+
+		.content-footer {
+			color: #666;
+
+			h1,h2,h3,h4,h5,h6 {
+				color: #333;
+			}
+
+			&.set-color {
+				a {
+					&:hover {
+						color: $main-color-01;
+					}
+				}
+			}
+
+			.subscribe-form-01 {
+				form {
+					label {
+						input {
+							color: #666;
+							border-color: #ccc;
+
+							&::-webkit-input-placeholder { color: #666;}
+							&:-moz-placeholder { color: #666;}
+							&::-moz-placeholder { color: #666;}
+							&:-ms-input-placeholder { color: #666;}
+
+							&:-webkit-autofill,
+							&:-webkit-autofill:hover,
+							&:-webkit-autofill:focus,
+							&:-webkit-autofill:active {
+								-webkit-text-fill-color: #666 !important;
+								transition: background-color 5000s ease-in-out 0s;
+							}
+						}
+					}
+				}
+
+				&.set-color {
+					form {
+						button {
+							&:hover {
+								color: #fff;
+								background: #222;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.copyright-footer {
+			color: #666;
+			border-color: #ddd;
+
+			&.set-color {
+				a {
+					color: $main-color-01;
+				}
+			}
+		}
+	}
+}

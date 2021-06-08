@@ -1,0 +1,100 @@
+/*[ hun-button ]
+//////////////////////////////////////////////////////////////////*/
+
+.hun-page .hun-button {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 1.5;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	white-space: nowrap;
+	overflow: hidden;
+	max-width: 100%;
+	min-width: 100px;
+	padding: 0 25px;
+	transition: all .2s;
+
+	&.size-small {
+		height: 40px;
+	}
+
+	&.size-normal {
+		height: 46px;
+	}
+
+	&.size-large {
+		height: 50px;
+	}
+
+	&.shape-square {
+		border-radius: 0;
+	}
+
+	&.shape-round {
+		&.size-small {
+			border-radius: 20px;
+		}
+
+		&.size-normal {
+			border-radius: 23px;
+		}
+
+		&.size-large {
+			border-radius: 25px;
+		}
+	}
+
+	&.style-fill-color {
+		border: none;
+		background: $main-color-01;
+		color: #fff;
+
+		&:hover {
+			background: $title-color-01;
+		}
+	}
+
+	&.style-fill-light {
+		border: none;
+		background: #fff;
+		color: $main-color-01 !important;
+
+		&:hover {
+			background: $title-color-01;
+			color: #fff !important;
+		}
+	}
+
+	&.style-fill-grey {
+		border: none;
+		background: #e6e6e6;
+		color: #222 !important;
+
+		&:hover {
+			background: $main-color-01;
+			color: #fff !important;
+		}
+	}
+
+	&.style-border-color {
+		border: 1px solid $main-color-01;
+		color: $main-color-01 !important;
+
+		&:hover {
+			background: $main-color-01;
+			color: #fff !important;
+		}
+	}
+
+	&.style-border-light {
+		border: 1px solid #fff;
+		color: #fff !important;
+
+		&:hover {
+			border-color: $main-color-01;
+			background: $main-color-01;
+			color: #fff;
+		}
+	}
+}

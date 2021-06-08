@@ -1,0 +1,58 @@
+/*[ hun-section-box-info ]
+//////////////////////////////////////////////////////////////////*/
+
+/*\
+ *
+ * Layout 1
+ *
+ * Style Class: show-space-bottom / show-small-space-bottom
+ *				full-width
+ *
+\*/
+.hun-section-box-info.layout-1 {
+	.inner-section {
+		margin-bottom: -30px;
+	}
+
+	.col,
+	[class*="col-"] {
+		padding-bottom: 30px;
+	}
+
+	.item-box {
+		text-align: center;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 30px 15px;
+		border: 1px solid #e5e5e5;
+
+		.title-box {
+			font-weight: 400;
+			font-size: 18px;
+			color: #666;
+			line-height: 1.4;
+			margin-bottom: 6px;
+		}
+
+		.description-box {
+			font-size: 13px;
+			color: #999;
+			font-style: italic;
+		}
+
+		a {
+			color: inherit;
+		}
+
+		&.set-color {
+			a {
+				&:hover {
+					color: $main-color-01;
+				}
+			}
+		}
+	}
+}

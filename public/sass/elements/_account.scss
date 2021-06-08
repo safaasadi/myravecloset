@@ -1,0 +1,178 @@
+/*[ hun-element-account ]
+//////////////////////////////////////////////////////////////////*/
+
+/*\
+ *
+ * Type 1
+ *
+\*/
+.hun-element-account--type-1 {
+	.content-element {
+		font-size: 14px;
+		color: #666;
+		background: #fff;
+		border: 1px solid #e5e5e5;
+		width: 500px;
+		max-width: calc(100% - 30px);
+		margin: 50px auto;
+
+		.tabs-account {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			padding-bottom: 12px;
+
+			&::before {
+				content: '';
+				display: block;
+				width: 100%;
+				height: 500px;
+				border-bottom: 1px solid #e5e5e5;
+				margin-bottom: 12px;
+			}
+
+			.content-tab {
+				opacity: 0;
+				pointer-events: none;
+				position: absolute;
+				width: 100%;
+				height: 500px;
+				top: 0;
+				left: 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				padding: 50px;
+				transform: translateY(-30px);
+
+				.title-form {
+					font-weight: 700;
+					text-align: center;
+					margin-bottom: 50px;
+				}
+
+				form {
+					display: block;
+					width: 100%;
+					margin: 0;
+
+					.description-form {
+						font-weight: 300;
+						color: #999;
+						margin-bottom: 20px;
+						text-align: center;
+					}
+
+					label {
+						display: block;
+						width: 100%;
+						margin-bottom: 20px;
+
+						.input-field {
+							color: #666;
+							display: block;
+							width: 100%;
+							height: 40px;
+							border: 1px solid #e5e5e5;
+							padding: 0 15px;
+
+							&::-webkit-input-placeholder { color: #999;}
+							&:-moz-placeholder { color: #999;}
+							&::-moz-placeholder { color: #999;}
+							&:-ms-input-placeholder { color: #999;}
+						}
+
+						input[type="checkbox"] {
+							margin-right: 5px;
+							transform: translateY(1px);
+						}
+					}
+
+					button {
+						color: #fff;
+						text-transform: uppercase;
+						line-height: 40px;
+						text-align: center;
+						white-space: nowrap;
+						overflow: hidden;
+						display: block;
+						width: 100%;
+						padding: 0 20px;
+						border: none;
+						margin-top: 30px;
+						transition: all .2s;
+					}
+				}
+
+				@media (max-width: 480px) {
+					padding: 35px 20px;
+				}
+			}
+
+			.label-tab {
+				cursor: pointer;
+				text-align: center;
+				display: block;
+				margin-bottom: 0;
+				padding: 2px 15px;
+				position: relative;
+				transition: all .2s;
+			}
+
+			.toggle-tab {
+				display: none;
+
+				&:checked {
+					& + .label-tab {
+						display: none;
+
+						& + .content-tab {
+							transition: all .5s;
+							transform: translateY(0px);
+							opacity: 1;
+							pointer-events: auto;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.set-color {
+		.content-element {
+			.tabs-account {
+				.content-tab {
+					form {
+						label {
+							.input-field {
+								&:focus {
+									border-color: $main-color-01;
+								}
+							}
+						}
+
+						button {
+							background: $main-color-01;
+
+							&:hover {
+								background: #222;
+							}
+						}
+					}
+				}
+
+				.label-tab {
+
+					&:hover {
+						color: $main-color-01;
+					}
+				}
+			}
+		}
+	}
+}

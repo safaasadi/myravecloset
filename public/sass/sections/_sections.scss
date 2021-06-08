@@ -1,0 +1,142 @@
+/*[ sections ]
+//////////////////////////////////////////////////////////////////*/
+
+/*\
+ *
+ * General
+ *
+\*/
+[class*="hun-section-"] {
+    &.show-space-bottom {
+        padding-bottom: 120px;
+    }
+
+    &.show-small-space-bottom {
+        padding-bottom: 50px;
+    }
+
+    &.full-width {
+        .container {
+            max-width: 100%;
+
+            @media (min-width: 1300px) {
+                padding-left: 35px;
+                padding-right: 35px;
+            }
+
+            @media (min-width: 1540px) {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+    }
+}
+
+
+/*\
+ *
+ * hun-content-default
+ *
+\*/
+.hun-content-default {
+    color: #888;
+    word-break: break-all;
+    word-break: break-word;
+
+    & > * {
+        margin-bottom: 26px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        padding-top: 15px;
+
+        &:first-child {
+            padding-top: 0;
+        }
+    }
+
+    p {
+        & > img {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    blockquote {
+        font-weight: 500;
+        font-size: 16px;
+        color: #666;
+        word-break: break-all;
+        word-break: break-word;
+        font-style: italic;
+        padding-left: 45px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        position: relative;
+
+        &::before {
+            content: '‘‘';
+            font-weight: 500;
+            font-style: normal;
+            font-size: 100px;
+            line-height: 1;
+            position: absolute;
+            top: 0px;
+            left: -5px;
+            letter-spacing: -3px;
+        }
+    }
+
+    figure {
+        max-width: 100%;
+    }
+
+    pre {
+        padding: 1.6em;
+    }
+}
+
+
+/*\
+ *
+ * othres
+ *
+\*/
+.off-parallax {
+    .parallax100 {
+        .inner-parallax {
+            min-height: 100% !important;
+            transform: none !important;
+            top: 0 !important;
+        }
+    }
+}
+
+.off-sticky-sidebar {
+    .theiaStickySidebar {
+        padding-bottom: 0 !important;
+        padding-top: 0 !important;
+        position: static !important;
+        width: 100% !important;
+        top: 0 !important;
+        left: 0 !important;
+    }
+}
+    
+.hun-page.hide-back-to-top + .btn-back-to-top {
+    display: none !important;
+}

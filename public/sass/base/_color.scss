@@ -1,0 +1,30 @@
+/*[ Color ]
+//////////////////////////////////////////////////////////////////*/
+
+body, textarea, input, button {
+	color: $text-color-01;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	color: $title-color-01;
+}
+
+a {
+	color: $main-color-01;
+	transition: color .2s;
+
+	&:hover {
+		color: $title-color-01;
+	}
+}
+
+table,
+th,
+td {
+	border-color: #e5e5e5;
+}

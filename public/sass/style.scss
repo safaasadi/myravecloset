@@ -1,0 +1,92 @@
+/*------------------------------------------------------------------
+Project:  MiSoppe
+Version:  1.0
+Last change:  13 January 2020
+Assigned to:  HunThemes
+Primary use:  HunThemes
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[LAYOUT]
+
+* body
+  + Header / header
+  + Content
+        - Section Layouts / div .name-section
+        - Sidebar / .hun-element-sidebar
+            - Search / .widget_search
+            - Categories / .widget_categories
+            - Post / .hun-widget-posts
+            - Tag / .widget_tag_cloud
+        ...
+  + Footer / footer
+
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[COLOR CODES]
+
+# Text Color      :  #666
+# Primary Color   :  #1467af
+
+------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[TYPOGRAPHY]
+
+Body            : 14px/1.666666 'Poppins', Arial, sans-serif;
+Title           : 39px/1.2 'Poppins', Arial, sans-serif;
+Paragrap        : 14px/1.666666 'Poppins', Arial, sans-serif;
+Input, textarea : 14px/1.666666 'Poppins', Arial, sans-serif;
+-------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+@import 'base/_mixins';
+@import 'base/_variables';
+@import 'base/_reset';
+@import 'base/_typo';
+@import 'base/_color';
+
+@import 'header/_header';
+@import 'header/_menu-mobile';
+@import 'footer/_footer';
+
+@import 'features/_back-to-top';
+@import 'features/_pre-loading';
+@import 'features/_style-magnific-popup';
+@import 'features/_hun-button';
+@import 'features/_pagination';
+
+@import 'elements/_others';
+@import 'elements/_search';
+@import 'elements/_category';
+@import 'elements/_product';
+@import 'elements/_account';
+@import 'elements/_cart';
+@import 'elements/_wish';
+@import 'elements/_post';
+@import 'elements/_detail-product';
+@import 'elements/_sidebar';
+
+@import 'sections/_sections';
+@import 'sections/_sec-categories';
+@import 'sections/_sec-products';
+@import 'sections/_sec-all-products';
+@import 'sections/_sec-mainslider';
+@import 'sections/_sec-banner';
+@import 'sections/_sec-heading';
+@import 'sections/_sec-blogs';
+@import 'sections/_sec-box-info';
+@import 'sections/_sec-instagram';
+@import 'sections/_sec-testimonial';
+@import 'sections/_sec-video';
+@import 'sections/_sec-page-title';
+@import 'sections/_sec-breadcrumbs';
+@import 'sections/_sec-detail-product';
+@import 'sections/_sec-cart';
+@import 'sections/_sec-wishlist';
+@import 'sections/_sec-coming-soon';
+@import 'sections/_sec-all-blog';
+@import 'sections/_sec-blog-detail';
+@import 'sections/_sec-brands';
+@import 'sections/_sec-media-box';
+@import 'sections/_sec-contact';
+

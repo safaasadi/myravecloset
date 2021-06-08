@@ -1,0 +1,47 @@
+/*[ hun-element-wish ]
+//////////////////////////////////////////////////////////////////*/
+
+/*\
+ *
+ * Type 1
+ *
+\*/
+.hun-element-wish--type-1 {
+	position: relative;
+
+	.btn-wish {
+		position: relative;
+
+		&::after {
+			content: attr(data-count-wish);
+			pointer-events: none;
+			font-size: 10px;
+			color: #fff;
+			text-align: center;
+			line-height: 15px;
+			min-width: 15px;
+			border-radius: 8px;
+			display: block;
+			padding: 0px 4px;
+			position: absolute;
+			top: calc(50% - 18px);
+			left: calc(50% + 5px);
+
+			@media (max-width: 767px) {
+				line-height: 13px;
+				min-width: 13px;
+				top: calc(50% - 16px);
+				left: calc(50% + 2px);
+			}
+		}
+	}
+
+	&.set-color {
+		.btn-wish {
+
+			&::after {
+				background: $main-color-01;
+			}
+		}
+	}
+}

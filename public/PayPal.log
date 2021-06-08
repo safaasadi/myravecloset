@@ -1,0 +1,44 @@
+[05-11-2020 16:39:58] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/oauth2/token
+[05-11-2020 16:39:58] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[05-11-2020 16:39:58] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/payments/payment
+[05-11-2020 16:39:59] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 201
+[05-11-2020 16:42:58] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/identity/openidconnect/tokenservice
+[05-11-2020 16:42:58] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[05-11-2020 16:42:58] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.paypal.com/v1/identity/openidconnect/userinfo?schema=openid
+[05-11-2020 16:42:59] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[05-11-2020 16:43:43] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/identity/openidconnect/tokenservice
+[05-11-2020 16:43:43] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 400
+[05-11-2020 16:43:43] PayPal\Core\PayPalHttpConnection : ERROR: Got Http response code 400 when accessing https://api.paypal.com/v1/identity/openidconnect/tokenservice. {"error_description":"Invalid authorization code","error":"access_denied","correlation_id":"6a6daa1e9696","information_link":"https://developer.paypal.com/docs/api/#errors"}
+[05-11-2020 16:43:54] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/identity/openidconnect/tokenservice
+[05-11-2020 16:43:54] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[05-11-2020 16:43:54] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.paypal.com/v1/identity/openidconnect/userinfo?schema=openid
+[05-11-2020 16:43:55] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[05-11-2020 16:46:03] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/identity/openidconnect/tokenservice
+[05-11-2020 16:46:03] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 400
+[05-11-2020 16:46:03] PayPal\Core\PayPalHttpConnection : ERROR: Got Http response code 400 when accessing https://api.paypal.com/v1/identity/openidconnect/tokenservice. {"error_description":"Invalid authorization code","error":"access_denied","correlation_id":"b74a7166fe67f","information_link":"https://developer.paypal.com/docs/api/#errors"}
+[05-11-2020 16:46:09] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/identity/openidconnect/tokenservice
+[05-11-2020 16:46:09] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[05-11-2020 16:46:09] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.paypal.com/v1/identity/openidconnect/userinfo?schema=openid
+[05-11-2020 16:46:10] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[05-11-2020 16:47:16] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/identity/openidconnect/tokenservice
+[05-11-2020 16:47:16] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 400
+[05-11-2020 16:47:16] PayPal\Core\PayPalHttpConnection : ERROR: Got Http response code 400 when accessing https://api.paypal.com/v1/identity/openidconnect/tokenservice. {"error_description":"Invalid authorization code","error":"access_denied","correlation_id":"c349a413e0c95","information_link":"https://developer.paypal.com/docs/api/#errors"}
+[05-11-2020 16:47:23] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/identity/openidconnect/tokenservice
+[05-11-2020 16:47:23] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[05-11-2020 16:47:23] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.paypal.com/v1/identity/openidconnect/userinfo?schema=openid
+[05-11-2020 16:47:24] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[05-11-2020 17:01:04] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/oauth2/token
+[05-11-2020 17:01:04] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[05-11-2020 17:01:04] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/payments/payment
+[05-11-2020 17:01:05] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 400
+[05-11-2020 17:01:05] PayPal\Core\PayPalHttpConnection : ERROR: Got Http response code 400 when accessing https://api.paypal.com/v1/payments/payment. {"name":"VALIDATION_ERROR","message":"Invalid request - see details","debug_id":"4a753875b50ff","information_link":"https://developer.paypal.com/docs/api/payments/#errors","details":[{"field":"transactions","location":"body","issue":"Only single payment transaction currently supported"}]}
+[05-11-2020 17:01:36] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/oauth2/token
+[05-11-2020 17:01:37] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[05-11-2020 17:01:37] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/payments/payment
+[05-11-2020 17:01:37] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 400
+[05-11-2020 17:01:37] PayPal\Core\PayPalHttpConnection : ERROR: Got Http response code 400 when accessing https://api.paypal.com/v1/payments/payment. {"name":"VALIDATION_ERROR","message":"Invalid request - see details","debug_id":"186988b297348","information_link":"https://developer.paypal.com/docs/api/payments/#errors","details":[{"field":"transactions","location":"body","issue":"Only single payment transaction currently supported"}]}
+[05-11-2020 17:02:14] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/oauth2/token
+[05-11-2020 17:02:14] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[05-11-2020 17:02:14] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/payments/payment
+[05-11-2020 17:02:14] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 400
+[05-11-2020 17:02:14] PayPal\Core\PayPalHttpConnection : ERROR: Got Http response code 400 when accessing https://api.paypal.com/v1/payments/payment. {"name":"VALIDATION_ERROR","message":"Invalid request - see details","debug_id":"45599df0874bf","information_link":"https://developer.paypal.com/docs/api/payments/#errors","details":[{"field":"transactions","location":"body","issue":"Only single payment transaction currently supported"}]}

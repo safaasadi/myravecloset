@@ -1,0 +1,44 @@
+/*[ hun-section-brands ]
+//////////////////////////////////////////////////////////////////*/
+
+/*\
+ *
+ * Layout 1
+ *
+ * Style Class: show-space-bottom / show-small-space-bottom
+ *				full-width
+ *
+\*/
+.hun-section-brands.layout-1 {
+	.inner-section {
+		margin-bottom: -50px;
+
+		.col, 
+		[class*="col-"] {
+			padding-bottom: 50px;
+		}
+
+		.item-brand {
+			text-align: center;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0px 20px;
+
+			img {
+				max-width: 100%;
+				-webkit-filter: grayscale(100%);
+				filter: grayscale(100%);
+				opacity: .5;
+				transition: all .3s;
+
+				&:hover {
+					opacity: 1;
+					-webkit-filter: grayscale(0%);
+					filter: grayscale(0%);
+				}
+			}
+		}
+	}
+}

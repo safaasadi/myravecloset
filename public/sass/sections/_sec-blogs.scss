@@ -1,0 +1,277 @@
+/*[ hun-section-blogs ]
+//////////////////////////////////////////////////////////////////*/
+
+/*\
+ *
+ * Layout 1
+ *
+ * Style Class: show-space-bottom / show-small-space-bottom
+ *				full-width
+ *
+\*/
+.hun-section-blogs.layout-1 {
+	.inner-section {
+		margin-bottom: -40px;
+	}
+
+	.col,
+	[class*="col-"] {
+		padding-bottom: 40px;
+	}
+}
+
+
+/*\
+ *
+ * Layout Slider
+ *
+ * Style Class: show-space-bottom / show-small-space-bottom
+ *				full-width
+ *				arrow-top
+ *				hide-link-view-all
+ *
+\*/
+.hun-section-blogs.layout-slider {
+	&.bg-grey {
+		background: #f9f9f9;
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+
+	.heading-section {
+		text-align: center;
+		margin-top: -9px;
+		margin-bottom: 60px;
+
+		.title-sec {
+			font-weight: 700;
+			font-size: 39px;
+			line-height: 1.2;
+			color: #333;
+			letter-spacing: 1px;
+			margin-bottom: 0;
+		}
+
+		@media (max-width: 767px) {
+			margin-bottom: 50px;
+
+			.title-sec {
+				font-size: 30px;
+			}
+		}
+	}
+
+	.slide-section {
+		position: relative;
+		margin-top: -15px;
+		margin-bottom: -15px;
+
+		.slide-slick {
+			margin-right: -15px;
+			margin-left: -15px;
+
+			.slick-list {
+				.slick-track {
+					margin-left: auto;
+					margin-right: auto;
+					display: flex;
+					align-items: stretch;
+				}
+			}
+
+			.item-slick {
+				padding: 15px;
+				height: auto;
+			}
+		}
+
+		.arrows-slick {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-top: 30px;
+			padding-bottom: 7px;
+
+			&::after,
+			&::before {
+				content: '';
+				display: block;
+				flex-grow: 1;
+				flex-basis: 1px;
+				height: 5px;
+				border-top: 1px solid #e5e5e5;
+				border-bottom: 1px solid #e5e5e5;
+			}
+
+			&::before {
+				order: 2;
+			}
+
+			&::after {
+				order: 4;
+			}
+			
+			.item-arrow {
+				cursor: pointer;
+				display: block;
+				color: #666;
+				text-align: center;
+				border: 1px solid #e5e5e5;
+				width: 50px;
+				height: 30px;
+				font-size: 23px;
+				line-height: 28px;
+				transition: all .2s;
+
+				&::before {
+					font-family: FontAwesome;
+				}
+
+				&.next-slick {
+					order: 5;
+					margin-left: 25px;
+					margin-right: auto;
+
+					&::before {
+						content: '\f101';
+					}
+				}
+
+				&.prev-slick {
+					order: 1;
+					margin-right: 25px;
+					margin-left: auto;
+
+					&::before {
+						content: '\f100';
+					}
+				}
+
+				&.set-color:hover {
+					background-color: $main-color-01;
+					border-color: $main-color-01;
+					color: #fff;
+				}
+
+				&.slick-arrow.slick-hidden {
+					display: none;
+				}
+		
+				&[aria-disabled="true"] {
+					cursor: not-allowed;
+				}
+			}
+
+			.link-view-all {
+				order: 3;
+				font-weight: 600;
+				font-size: 15px;
+				line-height: 1.4;
+				color: #555;
+				text-align: center;
+				text-transform: uppercase;
+				display: block;
+				background: #fff;
+				padding: 4px 25px;
+				transition: all .2s;
+
+				&.set-color:hover {
+					color: $main-color-01;
+				}
+			}
+
+			@media (max-width: 575px) {
+				.item-arrow {
+					width: 30px;
+					font-size: 20px;
+
+					&.next-slick {
+						margin-left: 10px;
+					}
+
+					&.prev-slick {
+						margin-right: 10px;
+					}
+				}
+
+				.link-view-all {
+					padding: 4px 15px;
+				}
+			}
+		}
+	}
+
+	&.arrow-top {
+		.heading-section {
+			text-align: left;
+			padding-right: 120px;
+
+			@media (max-width: 767px) {
+				padding-right: 90px;
+			}
+		}
+
+		.arrows-slick {
+			.item-arrow {
+				width: 39px;
+				height: 39px;
+				line-height: 37px;
+				position: absolute;
+				top: -90px;
+
+				&::before {
+					font-family: Ionicons;
+				}
+
+				&.next-slick {
+					margin: 0;
+					right: 0;
+
+					&::before {
+						content: '\f3d3';
+					}
+				}
+
+				&.prev-slick {
+					margin: 0;
+					right: 49px;
+
+					&::before {
+						content: '\f3d2';
+					}
+				}
+			}
+
+			@media (max-width: 767px) {
+				.item-arrow {
+					top: -71px;
+					width: 30px;
+					height: 30px;
+					font-size: 18px;
+					line-height: 28px;
+
+					&.prev-slick {
+						right: 40px;
+					}
+				}
+			}
+		}
+
+		&.hide-link-view-all {
+			.arrows-slick {
+				padding: 0;
+
+				&::after,
+				&::before {
+					display: none;
+				}
+			}
+		}
+	}
+
+	&.hide-link-view-all {
+		.link-view-all {
+			display: none !important;
+		}
+	}
+}

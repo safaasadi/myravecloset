@@ -1,0 +1,251 @@
+/*[ hun-element-post ]
+//////////////////////////////////////////////////////////////////*/
+
+/*\
+ *
+ * Type 1
+ *
+\*/
+.hun-element-post--type-1 {
+	.pic-post {
+		display: block;
+		overflow: hidden;
+
+		&::before {
+			content: '';
+			display: block;
+			background-image: inherit;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			padding-top: 69%;
+			transition: all .9s ease;
+		}
+
+		&:hover:before {
+			transform: scale(1.1);
+		}
+	}
+
+	.text-post {
+		padding-top: 15px;
+
+		.meta-info {
+			font-size: 13px;
+			line-height: 1.8;
+			color: #999;
+			word-break: break-all;
+			word-break: break-word;
+			margin-bottom: 15px;
+
+			a {
+				color: #222;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+
+			span {
+				color: #222;
+			}
+
+			&.set-color {
+				a {
+					&:hover {
+						color: $main-color-01;
+					}
+				}
+			}
+		}
+
+		.title-post {
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 1.5;
+			word-break: break-all;
+			word-break: break-word;
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+			max-height: calc(1.5 * 2em);
+			margin-bottom: 11px;
+
+			a {
+				color: inherit;
+			}
+
+			&.set-color {
+				a {
+					&:hover {
+						color: $main-color-01;
+					}
+				}
+			}
+		}
+
+		.description-post {
+			font-weight: 300;
+			color: #888;
+			line-height: 1.7;
+			word-break: break-all;
+			word-break: break-word;
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+			max-height: calc(1.7 * 3em);
+		}
+
+		& > *:last-child {
+			margin-bottom: 0 !important;
+		}
+	}
+}
+
+
+/*\
+ *
+ * Type 2
+ *
+\*/
+.hun-element-post--type-2 {
+	border-top: 1px solid #e5e5e5;
+	padding-top: 33px;
+	margin-bottom: 33px;
+
+	&:first-child {
+		padding-top: 0 !important;
+		border-top: none;
+	}
+
+	.pic-post {
+		display: none;
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 28px;
+
+		img {
+			transition: all .9s ease-out;
+		}
+
+		&:hover {
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	.text-post {
+		.title-post {
+			font-weight: 700;
+			font-size: 25px;
+			line-height: 1.4;
+			word-break: break-all;
+			word-break: break-word;
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+			max-height: calc(1.4 * 2em);
+			margin-bottom: 10px;
+
+			a {
+				color: inherit;
+			}
+
+			&.set-color {
+				a:hover {
+					color: $main-color-01;
+				}
+			}
+
+			@media (max-width: 767px) {
+				font-size: 20px;
+			}
+		}
+
+		.meta-info-post {
+			font-weight: 400;
+			font-size: 13px;
+			color: #999;
+			line-height: 1.5;
+			word-break: break-all;
+			word-break: break-word;
+			overflow: hidden;
+			letter-spacing: 14px;
+			margin-bottom: 13px;
+
+			a {
+				color: #333;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+
+			&.set-color {
+				a:hover {
+					color: $main-color-01;
+				}
+			}
+
+			.item-info {
+				display: inline-block;
+				letter-spacing: normal;
+				position: relative;
+				margin-bottom: 6px;
+
+				span {
+					color: #333;
+				}
+
+				&::before {
+					content: '|';
+					position: absolute;
+					top: 0;
+					left: -9px;
+				}
+			}
+		}
+
+		.description-post {
+			color: #888;
+			line-height: 1.666666;
+			word-break: break-all;
+			word-break: break-word;
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+			max-height: calc(1.666666 * 3em);
+			margin-bottom: 18px;
+		}
+
+		.link-post {
+			font-weight: 500;
+			font-size: 14px;
+			color: #333;
+			line-height: 1.5;
+
+			&::after {
+				content: '\f101';
+				font-family: FontAwesome;
+				margin-left: 3px;
+			}
+
+			&.set-color:hover {
+				color: $main-color-01;
+			}
+		}
+	}
+
+	&.has-post-thumbnail {
+		padding-top: 40px;
+
+		.pic-post {
+			display: block;
+		}
+	}
+}

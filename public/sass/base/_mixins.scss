@@ -1,0 +1,22 @@
+
+
+@mixin bg-gradient-horizontal($startColor: #333333, $endColor: #999999) {
+  background-image: -webkit-linear-gradient(left, $startColor, $endColor);
+  background-image: -o-linear-gradient(left, $startColor, $endColor);
+  background-image: -moz-linear-gradient(left, $startColor, $endColor);
+  background-image: linear-gradient(to left, $startColor, $endColor);
+}
+
+@mixin bg-gradient-vertical($startColor: #333333, $endColor: #999999) {
+  background-image: -webkit-linear-gradient(top, $startColor, $endColor);
+  background-image: -o-linear-gradient(top, $startColor, $endColor);
+  background-image: -moz-linear-gradient(top, $startColor, $endColor);
+  background-image: linear-gradient(to bottom, $startColor, $endColor);
+}
+
+@mixin bg-gradient-angle($angle: 90deg, $startColor: #333333, $endColor: #999999) {
+  background-image: -webkit-linear-gradient($angle, $startColor, $endColor);
+  background-image: -o-linear-gradient($angle, $startColor, $endColor);
+  background-image: -moz-linear-gradient($angle, $startColor, $endColor);
+  background-image: linear-gradient($angle, $startColor, $endColor);
+}

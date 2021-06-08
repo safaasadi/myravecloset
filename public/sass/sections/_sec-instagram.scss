@@ -1,0 +1,54 @@
+/*[ hun-section-instagram ]
+//////////////////////////////////////////////////////////////////*/
+
+/*\
+ *
+ * Layout 1
+ *
+ * Style Class: show-space-bottom / show-small-space-bottom
+ *
+\*/
+.hun-section-instagram.layout-1 {
+	.item-insta {
+		height: 100%;
+		display: block;
+		overflow: hidden;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
+
+		&::before {
+			content: '';
+			display: block;
+			padding-top: 100%;
+			height: 100%;
+			background: #000;
+			opacity: 0;
+			transition: all .3s ease-out;
+		}
+
+		.description-insta {
+			color: #fff;
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			padding: 20px 25px;
+			opacity: 0;
+			transform: translateY(50px);
+			transition: all .3s ease-out;
+		}
+
+		&:hover {
+			&:before {
+				opacity: .5;
+			}
+
+			.description-insta {
+				opacity: 1;
+				transform: translateY(0px);
+			}
+		}
+	}
+}

@@ -1,0 +1,133 @@
+/*[ hun-section-testimonial ]
+//////////////////////////////////////////////////////////////////*/
+
+/*\
+ *
+ * Layout 1
+ *
+ * Style Class: show-space-bottom / show-small-space-bottom
+ *
+\*/
+.hun-section-testimonial.layout-1 {
+	.inner-section {
+		padding: 110px 0px;
+		position: relative;
+		z-index: 0;
+
+		&::before {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			background: #000;
+			opacity: .6;
+		}
+
+		.bg-sec {
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			z-index: -2;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	.wrap-testimonial {
+		.slide-ava {
+			width: 390px;
+			max-width: 100%;
+			margin-right: auto;
+			margin-left: auto;
+			border-radius: 68px;
+			overflow: hidden;
+			margin-bottom: 53px;
+
+			.item-slick {
+				padding: 10px;
+
+				.wrap-ava {
+					cursor: pointer;
+					width: 119px;
+					max-width: 100%;
+					margin-right: auto;
+					margin-left: auto;
+					border-radius: 50%;
+					border: 3px solid #fff;
+					background-color: #fff;
+					transform-origin: bottom center;
+					transform: scale(0.88);
+					transition: all .5s;
+
+					img {
+						width: 100%;
+						border-radius: 50%;
+					}
+				}
+
+				&.slick-current,
+				&.slick-center {
+					.wrap-ava {
+						cursor: auto;
+						transform: scale(1);
+					}
+				}
+			}
+		}
+
+		.slide-text {
+			width: 960px;
+			max-width: 100%;
+			margin-right: auto;
+			margin-left: auto;
+
+			.item-slick {
+				text-align: center;
+
+				.content-tes {
+					font-weight: 300;
+					font-size: 18px;
+					color: #fff;
+					line-height: 1.8;
+					position: relative;
+					z-index: 0;
+					margin-bottom: 53px;
+				}
+
+				.star-tes {
+					font-size: 18px;
+					color: #fecc33;
+					margin-bottom: 5px;
+				}
+
+				.author-tes {
+					font-weight: 300;
+					font-size: 15px;
+					line-height: 1.6;
+					color: #fff;
+
+					.name-author {
+						font-weight: 500;
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	&.dark-0-percent .inner-section::before {opacity: 0;}
+	&.dark-10-percent .inner-section::before {opacity: 0.1;}
+	&.dark-20-percent .inner-section::before {opacity: 0.2;}
+	&.dark-30-percent .inner-section::before {opacity: 0.3;}
+	&.dark-40-percent .inner-section::before {opacity: 0.4;}
+	&.dark-50-percent .inner-section::before {opacity: 0.5;}
+	&.dark-60-percent .inner-section::before {opacity: 0.6;}
+	&.dark-70-percent .inner-section::before {opacity: 0.7;}
+	&.dark-80-percent .inner-section::before {opacity: 0.8;}
+	&.dark-90-percent .inner-section::before {opacity: 0.9;}
+}
